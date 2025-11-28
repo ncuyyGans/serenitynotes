@@ -1,10 +1,6 @@
 backend:
-  name: github
-  repo: ncuyyGans/serenitynotes
+  name: git-gateway
   branch: main
-  auth_scope: repo
-  open_authoring: false
-  base_url: https://ncuyydev.netlify.app
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
@@ -16,10 +12,11 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Category", name: "category", widget: "select", options: ["book-notes","quotes","travel","reflections"] }
-      - { label: "Tags", name: "tags", widget: "list", default: [] }
-      - { label: "Cover Image", name: "cover", widget: "image" }
-      - { label: "Excerpt", name: "excerpt", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: false}
+      - {label: "Category", name: "category", widget: "select", options: ["book-notes", "quotes", "travel", "reflections"]}
+      - {label: "Tags", name: "tags", widget: "list", default: []}
+      - {label: "Cover Image", name: "cover", widget: "image", required: false}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
