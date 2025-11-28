@@ -1,0 +1,7 @@
+<!-- SVG Placeholder for Cover Image -->
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#f7f7f7"/>
+  <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="48" fill="#6b6b6b" text-anchor="middle" dominant-baseline="middle">
+    Cover Image Placeholder
+  </text>
+</svg>
